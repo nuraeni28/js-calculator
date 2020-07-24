@@ -12,7 +12,7 @@ let currentNumber = '0'
 
 numbers.forEach((number) => {
     number.addEventListener("click", (event) => {
-        inputNumber(event.target.textContent)
+        inputNumber(event.target.value)
         updateScreen(currentNumber)
     })
 });
@@ -38,7 +38,7 @@ const inputOperator = (operator) => {
 
 operators.forEach((operator) => {
     operator.addEventListener("click", (event) => {
-        inputOperator(event.target.textContent);
+        inputOperator(event.target.value);
     })
 });
 
